@@ -1,0 +1,50 @@
+GIT
+  remote: git://github.com/rack/rack.git
+  revision: 1824547e8dfa8c2b553a913a6ad0935dd6ff7d12
+  specs:
+    rack (1.4.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    archive-tar-minitar (0.5.2)
+    childprocess (0.3.6)
+      ffi (~> 1.0, >= 1.0.6)
+    coderay (1.0.8)
+    erubis (2.7.0)
+    ffi (1.2.0)
+    i18n (0.6.1)
+    json (1.5.4)
+    log4r (1.1.10)
+    method_source (0.8.1)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-ssh (2.2.2)
+    pry (0.9.10)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.3.1)
+    pry-nav (0.2.2)
+      pry (~> 0.9.10)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
+    slop (3.3.3)
+    vagrant (1.0.5)
+      archive-tar-minitar (= 0.5.2)
+      childprocess (~> 0.3.1)
+      erubis (~> 2.7.0)
+      i18n (~> 0.6.0)
+      json (~> 1.5.1)
+      log4r (~> 1.1.9)
+      net-scp (~> 1.0.4)
+      net-ssh (~> 2.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pry
+  pry-nav
+  rack!
+  rack-contrib
+  vagrant

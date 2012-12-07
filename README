@@ -1,0 +1,9 @@
+
+vagrant box add precise64 http://files.vagrantup.com/precise64.box
+
+Varnish
+  https://www.varnish-cache.org/installation/ubuntu
+
+Traffic Server
+  https://cwiki.apache.org/TS/ubuntu.html
+  
