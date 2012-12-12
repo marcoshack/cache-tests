@@ -4,23 +4,12 @@
 # Default backend definition.  Set this to point to your content
 # server.
 # 
-import std;
 
 backend default {
     .host = "192.168.33.1";
     .port = "9292";
 }
 
-sub vcl_fetch {
-  if (beresp.http.Cache-Control ~ "(^|,) stale-if-error=") {
-    set beresp.grace = std.duration(regsub(beresp.http.Cache-Control, "(^|.*,) stale-if-error=([0-9]*) *(,.*|$)", "\2s"), 0s);
-    std.log("vcl_fetch: [rfc5861] stale-if-error detected, grace set to " + beresp.grace);
-  }
-}
-
-sub vcl_recv {
-  set req.grace = 24h;
-}
 # 
 # Below is a commented-out copy of the default VCL logic.  If you
 # redefine any of these subroutines, the built-in logic will be
